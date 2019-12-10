@@ -11,8 +11,8 @@ RUN yarn install
 # Bundle app source
 COPY . /app/
 
-# Binds to port 3000
-EXPOSE 3000
+# Binds to port 4000
+EXPOSE 4000
 
 # Command to run
 CMD yarn start

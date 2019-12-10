@@ -43,7 +43,7 @@ const urlPropsQueryConfig = {
 }
 
 interface State {
-  displayComponentCode: boolean,
+  displayComponentCode: boolean
   displayComponentImg: boolean
 }
 
@@ -95,13 +95,13 @@ export class Main extends React.Component<Props, State> {
   render () {
     const { avatarStyle } = this.props
     const { displayComponentCode, displayComponentImg } = this.state
-    const title = 'Avataaars Generator - Generate your own avataaars!'
+    const title = 'Ggavatar - Global Generate Avatar!'
     const imageURL = process.env.REACT_APP_IMG_RENDERER_URL + location.search
     return (
       <main role='main'>
         <header className='header clearfix'>
           <h2 style={{ color: '#6A39D7' }}>
-            avataaars generator
+            Ggavatar
             <Button
               type='submit'
               bsStyle='secondary'
@@ -114,15 +114,15 @@ export class Main extends React.Component<Props, State> {
         </header>
         <Helmet>
           <meta property='og:title' content={title} />
-          <meta property='og:site_name' content='Avataaars Generator' />
+          <meta property='og:site_name' content='Ggavatar' />
           <meta property='og:url' content={document.location.href} />
           <meta property='og:image' content={imageURL} />
           <meta
             property='og:description'
-            content='Avataaars Generator is a free online tool for generating your own avatar'
+            content='Ggavatar is a free online tool for generating your own avatar'
           />
           <meta name='twitter:card' content='photo' />
-          <meta name='twitter:site' content='Avataaars Generator' />
+          <meta name='twitter:site' content='Ggavatar' />
           <meta name='twitter:title' content={title} />
           <meta name='twitter:image' content={imageURL} />
           <meta name='twitter:url' content={document.location.href} />

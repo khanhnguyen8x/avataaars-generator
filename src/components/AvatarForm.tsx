@@ -80,7 +80,12 @@ export default class AvatarForm extends React.Component<Props> {
   }
 
   render () {
-    const { optionContext, avatarStyle, displayingImg, displayingCode } = this.props
+    const {
+      optionContext,
+      avatarStyle,
+      displayingImg,
+      displayingCode
+    } = this.props
     const selects = optionContext.options.map((option, index) => {
       const optionState = optionContext.getOptionState(option.key)!
       if (optionState.available <= 0) {
